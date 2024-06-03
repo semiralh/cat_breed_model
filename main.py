@@ -326,7 +326,7 @@ def main():
         print("Loaded saved model.")
     else:
         model = create_model(num_classes)
-        train_and_evaluate(model, train_dataset, test_dataset, label_encoder, epochs=200, fine_tune_epochs=100)
+        train_and_evaluate(model, train_dataset, test_dataset, label_encoder, epochs=20, fine_tune_epochs=20)
 
     model.save(saved_model_path)
 
